@@ -1,8 +1,19 @@
 @import "./bootstrap/minireset.scss";
 @import "./bootstrap/bootstrap.scss";
+@import "./dist/css/lightbox.css";
 // @import "./utils/form.scss";
 @import "./utils/variables";
 
+.item {
+    img {
+        transform: scale(1);
+        transform-property: transform;
+        transition-duration: 400ms;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
 
 .weight {
     font-weight: 800;
